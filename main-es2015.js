@@ -30,7 +30,7 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container mt-3\">\r\n    <span class=\"text-center\">\r\n        <h1>{{ portfolio.firstName + ' ' + portfolio.lastName }}</h1>\r\n        <h2 class=\"subHeading\">{{ portfolio.subHeading }}</h2>\r\n        <img id=\"profileP\" class=\"rounded-circle mx-auto d-block smallerImg\" alt=\"Profile picture\">\r\n    </span>\r\n    <div class=\"row justify-content-center\">\r\n        <a [href]=\"social.link\" class=\"p-2\" target=\"_blank\" *ngFor=\"let social of portfolio.socialMedia\">\r\n            <i [style.color]=\"social.color\" [class]=\"social.icon\"></i>\r\n        </a>\r\n    </div>\r\n    <div>\r\n        <h3>\r\n            <i (click)=\"toggleOpen('logOpen')\" *ngIf=\"!logOpen else logExpanded\" class=\"fa fa-plus\"></i>\r\n            <ng-template #logExpanded>\r\n                <i (click)=\"toggleOpen('logOpen')\" class=\"fa fa-minus\"></i>\r\n            </ng-template>\r\n            Changelog\r\n        </h3>\r\n        <p class=\"description\">\r\n            Some of my accomplishments.\r\n        </p>\r\n        <div *ngIf=\"logOpen\" [@fadeInOut]>\r\n            <ul>\r\n                <portfolio-changelog (toggleActiveChange)=\"toggleActiveChange($event)\" *ngFor=\"let change of portfolio.changeLog\" [change]=\"change\"></portfolio-changelog>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n    <div>\r\n        <h3>\r\n            <i class=\"fa fa-plus\" *ngIf=\"!projectOpen else projectExpanded\" (click)=\"toggleOpen('projectOpen')\"></i>\r\n            <ng-template #projectExpanded>\r\n                <i class=\"fa fa-minus\" (click)=\"toggleOpen('projectOpen')\"></i>\r\n            </ng-template>\r\n            Projects\r\n        </h3>\r\n        <p class=\"description\">\r\n            Projects that I've created.\r\n        </p>\r\n        <div *ngIf=\"projectOpen\" class=\"projects container rounded\" [@fadeInOut]>\r\n            <ul class=\"row p-0 pb-2\">\r\n                <portfolio-project class=\"col-lg-6 col-12\" *ngFor=\"let project of portfolio.projects; last as isLast\" [project]=\"project\"></portfolio-project>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n    <div>\r\n        <h3>\r\n            <i class=\"fa fa-plus\" *ngIf=\"!bioOpen else bioExpanded\" (click)=\"toggleOpen('bioOpen')\"></i>\r\n            <ng-template #bioExpanded>\r\n                <i class=\"fa fa-minus\" (click)=\"toggleOpen('bioOpen')\"></i>\r\n            </ng-template>\r\n            Biography\r\n        </h3>\r\n        <p class=\"description\">\r\n            Some brief info about me.\r\n        </p>\r\n        <div *ngIf=\"bioOpen\" class=\"p-5 mt-4 mb-5 bio rounded\" [@fadeInOut]>\r\n            {{ portfolio.speakerBio }}\r\n        </div>\r\n    </div>\r\n</div>"
+module.exports = "<div class=\"container mt-3\">\r\n    <span class=\"text-center\">\r\n        <h1>{{ portfolio.firstName + ' ' + portfolio.lastName }}</h1>\r\n        <h2 class=\"subHeading\">{{ portfolio.subHeading }}</h2>\r\n        <img id=\"profileP\" class=\"rounded-circle mx-auto d-block smallerImg\" alt=\"Profile picture\">\r\n    </span>\r\n    <div class=\"row justify-content-center\">\r\n        <a [href]=\"social.link\" class=\"p-2\" target=\"_blank\" *ngFor=\"let social of portfolio.socialMedia\">\r\n            <i [style.color]=\"social.color\" [class]=\"social.icon\"></i>\r\n        </a>\r\n    </div>\r\n    <div>\r\n        <h3>\r\n            <i (click)=\"toggleOpen('logOpen')\" *ngIf=\"!logOpen else logExpanded\" class=\"fa fa-plus\" role=\"button\"></i>\r\n            <ng-template #logExpanded>\r\n                <i (click)=\"toggleOpen('logOpen')\" class=\"fa fa-minus\" role=\"button\"></i>\r\n            </ng-template>\r\n            Changelog\r\n        </h3>\r\n        <p class=\"description\">\r\n            Some of my accomplishments.\r\n        </p>\r\n        <div *ngIf=\"logOpen\" [@fadeInOut]>\r\n            <ul>\r\n                <portfolio-changelog (toggleActiveChange)=\"toggleActiveChange($event)\" *ngFor=\"let change of portfolio.changeLog\" [change]=\"change\"></portfolio-changelog>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n    <div>\r\n        <h3>\r\n            <i class=\"fa fa-plus\" *ngIf=\"!projectOpen else projectExpanded\" (click)=\"toggleOpen('projectOpen')\" role=\"button\"></i>\r\n            <ng-template #projectExpanded>\r\n                <i class=\"fa fa-minus\" (click)=\"toggleOpen('projectOpen')\" role=\"button\"></i>\r\n            </ng-template>\r\n            Projects\r\n        </h3>\r\n        <p class=\"description\">\r\n            Projects that I've created.\r\n        </p>\r\n        <div *ngIf=\"projectOpen\" class=\"projects container rounded\" [@fadeInOut]>\r\n            <ul class=\"row p-0 pb-2\">\r\n                <portfolio-project class=\"col-lg-6 col-12\" *ngFor=\"let project of portfolio.projects; last as isLast\" [project]=\"project\"></portfolio-project>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n    <div>\r\n        <h3>\r\n            <i class=\"fa fa-plus\" *ngIf=\"!bioOpen else bioExpanded\" (click)=\"toggleOpen('bioOpen')\" role=\"button\"></i>\r\n            <ng-template #bioExpanded>\r\n                <i class=\"fa fa-minus\" (click)=\"toggleOpen('bioOpen')\" role=\"button\"></i>\r\n            </ng-template>\r\n            Biography\r\n        </h3>\r\n        <p class=\"description\">\r\n            Some brief info about me.\r\n        </p>\r\n        <div *ngIf=\"bioOpen\" class=\"p-5 mt-4 mb-5 bio rounded\" [@fadeInOut]>\r\n            {{ portfolio.speakerBio }}\r\n        </div>\r\n    </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -316,7 +316,7 @@ __webpack_require__.r(__webpack_exports__);
 const PortfolioData = {
     firstName: 'Christopher',
     lastName: 'Lubin',
-    subHeading: 'Full Stack Software Developer',
+    subHeading: 'Front-End Software Engineer',
     socialMedia: [
         {
             icon: 'fa fa-linkedin fa-2x',
@@ -328,14 +328,35 @@ const PortfolioData = {
             link: 'https://github.com/ChrisLubin',
             color: '#6E5494'
         },
+        {
+            icon: 'fa fa-file fa-2x',
+            link: 'https://drive.google.com/file/d/1Fvrr2lZE5xB6czt6GdgpbvSkaIXf0v4c/view?usp=share_link',
+            color: '#4F90CD'
+        }
     ],
     changeLog: [
+        {
+            color: '#24D05A',
+            month: 'October',
+            year: 2021,
+            highlight: "Took On the Biggest Project That I Was Ever Tasked With",
+            details: "I was tasked with rearchitecting the keyboard shortcuts system on the main web application that my team serviced. It included writing up pages of documentation, communicating with product managers and designers on requirements that needed specificity, and about 2 months of coding to implement the features with tests.",
+            showDetails: false
+        },
+        {
+            color: '#10A2F5',
+            month: 'January',
+            year: 2021,
+            highlight: "Moved On to Become a Front-End Engineer",
+            details: "RingCentral played a crucial part in advancing my career by having high standards and surrounding me with so many talented engineers.",
+            showDetails: false
+        },
         {
             color: '#EB4888',
             month: 'January',
             year: 2020,
             highlight: "Became a Full Stack Software Developer",
-            details: "My first role in my career!",
+            details: "The first role in my career!",
             showDetails: false
         },
         {
@@ -351,7 +372,7 @@ const PortfolioData = {
             month: 'April',
             year: 2019,
             highlight: "Enhanced Unify's Circuit Google Assistant",
-            details: "This is a big accomplishment for me because I was given the opportunity to enhance Unify's Google Assistant application using Node.js even though I am on the automation team.",
+            details: "This was a big accomplishment for me because I was given the opportunity to enhance Unify's Google Assistant application using Node.js, essentially working as a feature engineer even though I was on the automation team.",
             showDetails: false
         },
         {
@@ -359,7 +380,7 @@ const PortfolioData = {
             month: 'August',
             year: 2018,
             highlight: 'Internship at Unify',
-            details: "For this role I am on the automation team that tests the company's flagship product, Circuit. We mainly use Groovy as our programming language.",
+            details: "For this role, I was on the automation team that tested the company's flagship product, Circuit. We mainly used Groovy as our programming language of choice.",
             showDetails: false
         },
         {
@@ -383,7 +404,7 @@ const PortfolioData = {
             month: 'November',
             year: 2014,
             highlight: 'Intership at the Museum of Discovery and Science',
-            details: 'This internship was a two year experience where I got to learn more about the museum and helped build a mobile application.',
+            details: 'This internship was a two year experience where I got to learn more about the museum and helped build an Android mobile application.',
             showDetails: false
         }
     ],
@@ -457,7 +478,7 @@ const PortfolioData = {
             githubLink: 'https://github.com/ChrisLubin/Math-Game'
         }
     ],
-    speakerBio: 'Chris is currently a full stack software developer working at IBI Group Inc. He graduated from Florida Atlantic University magna cum laude with a B.S. in Computer Science in December of 2019. He is a self-motivated individual who is striving to become the best web developer that he can be. One of his major goals is to become a senior full stack developer within five years into his career as a software developer. Chris hopes to achieve this goal by continuously learning throughout his career on his own time.'
+    speakerBio: 'Chris is currently a front-end software engineer working at RingCentral. He currently has 3 years of experience in the web development industry. He graduated from Florida Atlantic University magna cum laude with a B.S. in Computer Science in December of 2019. He is a self-motivated individual who is striving to become the best engineer that he can be. One of his major goals is to become a senior engineer within seven years into his career as a software engineer. Chris hopes to achieve this goal by continuously learning throughout his career on the job and on his own time.'
 };
 
 
