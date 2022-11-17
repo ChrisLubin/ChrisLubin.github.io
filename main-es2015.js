@@ -423,7 +423,7 @@ const PortfolioData = {
             color: '#9EA8FF',
             month: 'August',
             year: 2019,
-            link: 'http://lamp.cse.fau.edu/~clubin2015/kahoot',
+            link: 'https://kahoot-like-app-frontend.onrender.com',
             imgSrc: 'https://github.com/ChrisLubin/Kahoot-Like-App/blob/master/images/screenshot2.png?raw=true',
             githubLink: 'https://github.com/ChrisLubin/Kahoot-Like-App'
         },
@@ -463,7 +463,7 @@ const PortfolioData = {
             color: '#279EAA',
             month: 'July',
             year: 2018,
-            link: 'http://lamp.cse.fau.edu/~clubin2015/todo',
+            link: 'https://to-do-list-q847.onrender.com',
             imgSrc: 'https://github.com/ChrisLubin/To-Do-List/blob/master/IMG/Demo/screenshot1.PNG?raw=true',
             githubLink: 'https://github.com/ChrisLubin/To-Do-List'
         },
@@ -473,7 +473,7 @@ const PortfolioData = {
             color: '#E4E4E4',
             month: 'May',
             year: 2018,
-            link: 'http://lamp.cse.fau.edu/~clubin2015/math',
+            link: 'https://math-game.onrender.com',
             imgSrc: 'https://github.com/ChrisLubin/Math-Game/blob/master/IMG/Demo/screenshot1.png?raw=true',
             githubLink: 'https://github.com/ChrisLubin/Math-Game'
         }
