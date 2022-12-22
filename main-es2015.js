@@ -328,11 +328,6 @@ const PortfolioData = {
             link: 'https://github.com/ChrisLubin',
             color: '#6E5494'
         },
-        {
-            icon: 'fa fa-file fa-2x',
-            link: 'https://drive.google.com/file/d/1Fvrr2lZE5xB6czt6GdgpbvSkaIXf0v4c/view?usp=share_link',
-            color: '#4F90CD'
-        }
     ],
     changeLog: [
         {
